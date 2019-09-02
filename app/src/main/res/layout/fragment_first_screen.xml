@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:padding="10dp"
+              android:background="@color/elevator"
+              tools:context=".FirstScreen">
+	
+	<LinearLayout android:layout_width="match_parent"
+	              android:padding="10dp"
+	              android:orientation="horizontal"
+	              android:layout_height="wrap_content">
+		<LinearLayout
+				android:layout_width="0dp"
+				android:layout_height="match_parent"
+				android:layout_weight="1"
+				android:paddingLeft="5dp"
+				android:orientation="vertical" >
+			<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:paddingLeft="10dp"
+					android:text="Skip"
+					android:clickable="true"
+					android:focusable="true"
+					android:id="@+id/skipFirst"
+					android:layout_gravity="right"
+			
+			/>
+		</LinearLayout>
+	
+	</LinearLayout>
+	<ImageView
+			android:src="@drawable/zed"
+			android:layout_width="80dp"
+			android:layout_height="80dp"
+			android:layout_gravity="center"
+			android:layout_marginTop="0dp"
+			android:id="@+id/imageView2"/>
+	<ImageView
+			android:src="@drawable/add"
+			android:layout_width="220dp"
+			android:layout_height="200dp"
+			android:layout_gravity="center"
+			android:layout_marginTop="30dp"
+			android:id="@+id/imageView"/>
+	
+	
+	<TextView
+			android:layout_width="match_parent"
+			android:text="Fund Wallet"
+			android:textAlignment="center"
+			android:textSize="25dp"
+			android:textColor="@color/colorPrimaryDark"
+			android:textStyle="bold"
+			android:layout_marginTop="20dp"
+			android:layout_height="wrap_content"/>
+	
+	<TextView
+			android:layout_width="300dp"
+			android:text="If you have fear carrying your card,
+virtual debit card work anywhere"
+			android:padding="30dp"
+			android:textAlignment="center"
+			android:gravity="center_horizontal"
+			android:layout_gravity="center"
+			android:layout_height="wrap_content"/>
+	<Button android:layout_width="150dp"
+	        android:background="@drawable/button_round_bg"
+	        android:text="Next"
+	        android:textColor="@color/whiteColor"
+	        android:padding="10dp"
+	        android:layout_marginTop="10dp"
+	        android:layout_gravity="center"
+	        android:id="@+id/nextFirst"
+	        android:layout_height="wrap_content"/>
+	
+	<LinearLayout android:layout_width="wrap_content"
+	              android:padding="10dp"
+	              android:textAlignment="center"
+	              android:orientation="horizontal"
+	              android:layout_marginTop="20dp"
+	              android:layout_gravity="center_horizontal"
+	              android:layout_height="wrap_content">
+	
+	
+		<ImageView
+				android:src="@drawable/tickedindicator"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:id="@+id/firstTicked"
+				android:clickable="true"
+				android:focusable="true"
+				android:layout_gravity="center"
+		
+		/>
+		
+		
+		<ImageView
+				android:src="@drawable/untickedindicator"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:paddingLeft="10dp"
+				android:paddingRight="10dp"
+				android:orientation="vertical"
+				android:clickable="true"
+				android:focusable="true"
+				android:id="@+id/firstSecondUnticked"
+				android:layout_gravity="center"
+		
+		/>
+		
+		<ImageView
+				android:src="@drawable/untickedindicator"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:orientation="vertical"
+				android:clickable="true"
+				android:focusable="true"
+					android:id="@+id/firstThirdUnticked"
+					android:layout_gravity="center_horizontal"
+			
+			/>
+</LinearLayout>
+
+
+</LinearLayout>

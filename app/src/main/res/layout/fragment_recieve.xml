@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		xmlns:tools="http://schemas.android.com/tools"
+		xmlns:app="http://schemas.android.com/apk/res-auto"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		tools:context=".Recieve">
+	<RelativeLayout
+			android:layout_width="match_parent"
+			android:id="@+id/round_layout"
+			android:background="@color/colorPrimary"
+			android:orientation="horizontal"
+			android:textAlignment="center"
+			android:gravity="center_horizontal"
+			android:layout_height="200dp">
+		
+		<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Withdraw Money"
+				android:textStyle="bold"
+				android:textColor="@color/whiteColor"
+				android:gravity="center_horizontal"
+				android:textAlignment="center"
+				android:layout_marginTop="80dp"
+				android:textSize="20dp"/>
+	
+	</RelativeLayout>
+	<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:padding="14dp"
+			android:layout_below="@id/round_layout"
+			android:layout_marginTop="30dp">
+		
+		<EditText
+				android:layout_width="match_parent"
+				android:layout_height="60dp"
+				android:hint="Amount"
+				android:textColorHint="@color/tintedFade"
+				android:paddingLeft="14dp"
+				android:textSize="20sp"
+				android:id="@+id/amount"
+				android:inputType="textPersonName"
+				android:layout_marginTop="20dp"
+				android:background="@drawable/round_inptut_fade"
+		/>
+		<Button android:layout_width="match_parent"
+		        android:layout_below="@id/amount"
+		        android:background="@drawable/button_round_bg"
+		        android:layout_marginTop="20dp"
+		        android:text="continue"
+		        android:textAlignment="center"
+		        android:textSize="20sp"
+		        android:id="@+id/recieveBtn"
+		        android:textColor="@color/whiteColor"
+		        android:textAllCaps="false"
+		        android:layout_height="60dp"/>
+	</RelativeLayout>
+
+</RelativeLayout>

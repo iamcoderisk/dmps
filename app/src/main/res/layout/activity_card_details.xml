@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		xmlns:tools="http://schemas.android.com/tools"
+		xmlns:app="http://schemas.android.com/apk/res-auto"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		tools:context=".FundWallet">
+	<RelativeLayout
+			android:layout_width="match_parent"
+			android:id="@+id/round_layout"
+			android:background="@drawable/bent_path"
+			android:orientation="horizontal"
+			android:textAlignment="center"
+			android:gravity="center_horizontal"
+			android:layout_height="200dp">
+		
+		<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Fund Wallet"
+				android:textStyle="bold"
+				android:textColor="@color/whiteColor"
+				android:gravity="center_horizontal"
+				android:textAlignment="center"
+				android:layout_marginTop="80dp"
+				android:textSize="20dp"/>
+	
+	</RelativeLayout>
+	<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:padding="14dp"
+			android:layout_below="@id/round_layout"
+			android:layout_marginTop="30dp">
+		
+		<EditText
+				android:layout_width="match_parent"
+				android:layout_height="60dp"
+				android:hint="Card Number"
+				android:textColorHint="@color/tintedFade"
+				android:paddingLeft="14dp"
+				android:textSize="20sp"
+				android:id="@+id/cardNumber"
+				android:inputType="textPersonName"
+				android:layout_marginTop="20dp"
+				android:background="@drawable/round_inptut_fade"
+		/>
+		<LinearLayout android:layout_width="match_parent"
+		              android:layout_below="@id/cardNumber"
+		              android:orientation="horizontal"
+		              android:id="@+id/linearHolder"
+		              android:layout_height="wrap_content">
+		<LinearLayout
+				android:layout_width="0dp"
+				android:layout_height="match_parent"
+				android:layout_weight="1"
+				android:paddingRight="5dp"
+				android:orientation="vertical" >
+			<EditText
+					android:layout_width="match_parent"
+					android:layout_height="60dp"
+					android:hint="Month/year"
+					android:id="@+id/month_and_year"
+					android:maxLength="5"
+					android:textColorHint="@color/tintedFade"
+					android:paddingLeft="14dp"
+					android:textSize="20sp"
+					android:clickable="true"
+					android:inputType="number"
+					android:layout_marginTop="20dp"
+					android:background="@drawable/round_inptut_fade"
+			/>
+		</LinearLayout>
+			
+			<LinearLayout
+					android:layout_width="0dp"
+					android:layout_height="match_parent"
+					android:layout_weight="1"
+					android:paddingLeft="5dp"
+					android:orientation="vertical" >
+				<EditText
+						android:layout_width="match_parent"
+						android:layout_height="60dp"
+						android:id="@+id/cvv"
+						android:hint="Cvv"
+						android:textColorHint="@color/tintedFade"
+						android:paddingLeft="14dp"
+						android:textSize="20sp"
+						android:inputType="textPersonName"
+						android:layout_marginTop="20dp"
+						android:background="@drawable/round_inptut_fade"
+				/>
+			</LinearLayout>
+		
+		</LinearLayout>
+		<Button android:layout_width="match_parent"
+		        android:layout_below="@id/linearHolder"
+		        android:background="@drawable/button_round_fade"
+		        android:layout_marginTop="20dp"
+		        android:text="Submit"
+		        android:textAlignment="center"
+		        android:textSize="20sp"
+		        android:id="@+id/submitCardBtn"
+		        android:textColor="@color/whiteColor"
+		        android:textAllCaps="false"
+		        android:layout_height="60dp"/>
+	</RelativeLayout>
+
+</RelativeLayout>

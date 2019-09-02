@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3742a8</color>
+    <color name="colorPrimaryDark">#3742a8</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="whiteColor">#ffffff</color>
+    <color name="buttonColor">#FDFEFF</color>
+    <color name="elevator">#F0F2F7</color>
+    <color name="elevationColor">#E8E8EC</color>
+    <color name="tintedFade">#A8ABB2</color>
+    <color name="extended_color">#8689AC</color>
+    <color name="darkText">#120101</color>
+    <color name="buttonTextColor">#42065D</color>
+    <color name="bottomNavBackground">#F2F3F8</color>
+</resources>

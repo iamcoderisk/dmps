@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools"
+          package="com.example.dmps">
+	
+	<uses-sdk tools:overrideLibrary="android.support.v17.leanback"/>
+	
+	<uses-permission android:name="android.permission.INTERNET"/>
+	<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+	
+	<application
+			android:allowBackup="true"
+			android:icon="@mipmap/ic_launcher"
+			android:label="@string/app_name"
+			android:roundIcon="@mipmap/ic_launcher_round"
+			android:supportsRtl="true"
+			android:theme="@style/Theme.AppCompat.Light">
+		<activity android:name=".ShowRequest">
+		</activity>
+		<activity android:name=".WalletTransfer">
+		</activity>
+		<activity
+				android:name=".ProfileSettings"
+				android:theme="@style/AppTheme.ActionBar.Transparent">
+		</activity>
+		<activity
+				android:name=".ListUserCards"
+				android:theme="@style/AppTheme.ActionBar.Transparent">
+		</activity>
+		<activity android:name=".ListUsers">
+		</activity>
+		<activity android:name=".Transactions">
+		</activity>
+		<activity android:name=".AmountToRecieve">
+		</activity>
+		<activity
+				android:name=".CardDetails"
+				android:theme="@style/AppTheme.ActionBar.Transparent">
+		</activity>
+		<activity
+				android:name=".FundWallet"
+				android:theme="@style/AppTheme.ActionBar.Transparent">
+		</activity>
+		
+		<meta-data
+				android:name="co.paystack.android.PublicKey"
+				android:value="pk_live_ccf73051ba81732702807481e9ed8504e714ff3b "/>
+		
+		<activity
+				android:name=".Dashboard"
+				android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+			<meta-data
+					android:name="android.support.PARENT_ACTIVITY"
+					android:value="com.example.dmps.Dashboard"/>
+		</activity>
+		<activity android:name=".ForgotPassword">
+		</activity>
+		<activity
+				android:name=".SignupActivity"
+				android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+		</activity>
+		<activity
+				android:name=".LoginActivity"
+				android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+		</activity>
+		<activity
+				android:name=".MainActivity"
+				android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN"/>
+				
+				<category android:name="android.intent.category.LAUNCHER"/>
+			</intent-filter>
+		</activity>
+	</application>
+
+</manifest>
